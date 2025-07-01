@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neural Climate | Predictive HVAC Platform</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f8fa; color: #222; }
+    header { background: #0f2537; color: white; padding: 2rem; text-align: center; }
+    section { padding: 2rem; max-width: 1000px; margin: auto; }
+    h2 { color: #0f2537; border-bottom: 2px solid #ddd; padding-bottom: 0.5rem; }
+    ul, li { line-height: 1.6; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; vertical-align: top; }
+    footer { background: #0f2537; color: white; text-align: center; padding: 1rem; }
+    img { max-width: 100%; height: auto; margin: 1rem 0; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/neural-climate-logo.png" alt="Neural Climate Logo" />
+  <h1>Neural Climate</h1>
+  <p>A Cloud-Driven Predictive HVAC System</p>
+  <p><em>Harnessing AI and IoT to Redefine Environmental Comfort</em></p>
+</header>
+
+<section>
+  <h2>📘 Project Description</h2>
+  <p>
+    Neural Climate is a next-generation HVAC monitoring and control platform designed for smart buildings, commercial spaces, and energy-conscious property owners. 
+    By integrating edge-based sensor networks with cloud services from AWS, the system delivers real-time diagnostics, predictive analytics, and automation—all while reducing energy use and maintenance costs.
+  </p>
+  <p>
+    The platform empowers technicians, building managers, and owners with actionable insights by converting complex environmental data into predictive intelligence using machine learning. 
+    It adapts to occupancy patterns, outdoor weather, and system performance to optimize comfort and efficiency.
+  </p>
+</section>
+
+<section>
+  <h2>🌐 AWS Services & Integration Flow</h2>
+  <p>
+    Below is an overview of the core AWS services that power Neural Climate and how data flows through the system:
+  </p>
+  <img src="images/infrastructure-flow-diagram.png" alt="System Flow Diagram" />
+  <ul>
+    <li><strong>IoT Sensors</strong> collect environmental metrics like temperature, humidity, and vibration.</li>
+    <li><strong>AWS IoT Core</strong> securely receives sensor data using MQTT.</li>
+    <li><strong>Lambda Functions</strong> filter and preprocess data, generate alerts.</li>
+    <li><strong>Amazon Timestream</strong> stores telemetry for historical analysis.</li>
+    <li><strong>Amazon S3</strong> stores raw logs, model training data, media.</li>
+    <li><strong>Amazon SageMaker</strong> detects early warning signs of faults.</li>
+    <li><strong>Amazon QuickSight</strong> displays dashboards in real time.</li>
+    <li><strong>AWS Step Functions</strong> automate safety and control workflows.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>👥 Who Benefits and How</h2>
+  <p>
+    Neural Climate delivers targeted benefits to each stakeholder in the HVAC ecosystem, ensuring long-term value across use cases.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Target Group</th>
+        <th>Benefits</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>HVAC Technicians</strong></td>
+        <td>
+          <ul>
+            <li>Remote access to system performance before visiting site</li>
+            <li>Fewer emergency calls and guesswork—data-driven diagnostics</li>
+            <li>Step-by-step repair insights powered by historic anomalies</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Facility Managers</strong></td>
+        <td>
+          <ul>
+            <li>Real-time dashboards and mobile alerts for quick decision-making</li>
+            <li>Predictive maintenance reduces unexpected downtime</li>
+            <li>Compliance reporting on air quality and energy usage</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Property Owners & Investors</strong></td>
+        <td>
+          <ul>
+            <li>Lower operating costs through energy efficiency</li>
+            <li>Asset longevity thanks to early failure detection</li>
+            <li>Green building certification readiness and ESG data integration</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Tenants & Occupants</strong></td>
+        <td>
+          <ul>
+            <li>Consistent comfort regardless of external conditions</li>
+            <li>Improved indoor air quality and environmental health</li>
+            <li>Transparency with mobile access to climate status</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section>
+  <h2>📦 HVAC Business Owners: Strategic Gains</h2>
+  <p>
+    Neural Climate empowers HVAC companies to evolve from reactive service providers to proactive solution architects. With cloud-connected diagnostics, predictive insights, and remote service capabilities, owners can elevate their brand, optimize operations, and unlock recurring revenue streams.
+  </p>
+  <ul>
+    <li><strong>Differentiation:</strong> Offer smart HVAC contracts with AI-powered monitoring</li>
+    <li><strong>Remote Support Services:</strong> Reduce in-person dispatches through live telemetry</li>
+    <li><strong>Customer Trust:</strong> Build data-backed reports that justify service calls and build client transparency</li>
+    <li><strong>Recurring Revenue:</strong> Monetize dashboards, tiered subscriptions, and uptime SLAs</li>
+    <li><strong>Scalable Service Models:</strong> Use centralized dashboards to manage multiple clients from a single command center</li>
+  </ul>
+</section>
+
+<section>
+  <h2>📈 Why It Matters</h2>
+  <img src="images/value-insights-chart.png" alt="Value Proposition Visual" />
+  <ul>
+    <li><strong>Energy Savings:</strong> Adaptive control algorithms reduce power usage by up to 30%.</li>
+    <li><strong>Smart Scheduling:</strong> Predictive alerts align service visits with actual need.</li>
+    <li><strong>Remote Supervision:</strong> Managers and technicians get live insights from anywhere.</li>
+    <li><strong>Cloud Scale:</strong> Built on AWS, Neural Climate scales from one unit to hundreds.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 Neural Climate • Engineered by George • System Design, Logic & Visuals by Copilot</p>
+</footer>
+
+</body>
+</html>
