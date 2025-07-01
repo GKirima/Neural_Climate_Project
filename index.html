@@ -5,16 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Neural Climate | Predictive HVAC Platform</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f8fa; color: #222; }
-    header { background: #0f2537; color: white; padding: 2rem; text-align: center; }
-    section { padding: 2rem; max-width: 1000px; margin: auto; }
-    h2 { color: #0f2537; border-bottom: 2px solid #ddd; padding-bottom: 0.5rem; }
-    ul, li { line-height: 1.6; }
-    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; vertical-align: top; }
-    footer { background: #0f2537; color: white; text-align: center; padding: 1rem; }
-    img { max-width: 100%; height: auto; margin: 1rem 0; border: 1px solid #ccc; }
-  </style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f8fa;
+    color: #222;
+  }
+  header {
+    background: #0f2537;
+    color: white;
+    padding: 2rem;
+    text-align: left;
+    position: relative;
+  }
+  header img {
+    max-width: 120px;
+    height: auto;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  header h1, header p {
+    margin-left: 140px; /* leaves space for logo */
+  }
+  section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  h2 {
+    color: #0f2537;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+  ul, li {
+    line-height: 1.6;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  footer {
+    background: #0f2537;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  img {
+    max-width: 380px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+  }
+
+  /* New flex layout for integration section */
+  .integration-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .integration-flow img {
+  width: 420px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin: 0;
+  }
+  .integration-flow .text {
+    flex: 1 1 55%;
+  }
+</style>
+
 </head>
 <body>
 
@@ -39,21 +110,27 @@
 
 <section>
   <h2>🌐 AWS Services & Integration Flow</h2>
-  <p>
-    Below is an overview of the core AWS services that power Neural Climate and how data flows through the system:
-  </p>
-  <img src="images/phase_three.jpg" alt="System Flow Diagram" />
-  <ul>
-    <li><strong>IoT Sensors</strong> collect environmental metrics like temperature, humidity, and vibration.</li>
-    <li><strong>AWS IoT Core</strong> securely receives sensor data using MQTT.</li>
-    <li><strong>Lambda Functions</strong> filter and preprocess data, generate alerts.</li>
-    <li><strong>Amazon Timestream</strong> stores telemetry for historical analysis.</li>
-    <li><strong>Amazon S3</strong> stores raw logs, model training data, media.</li>
-    <li><strong>Amazon SageMaker</strong> detects early warning signs of faults.</li>
-    <li><strong>Amazon QuickSight</strong> displays dashboards in real time.</li>
-    <li><strong>AWS Step Functions</strong> automate safety and control workflows.</li>
-  </ul>
+  <div class="integration-flow">
+    <img src="images/phase_three.jpg" alt="System Flow Diagram" />
+    <div class="text">
+      <p>
+        Below is an overview of the core AWS services that power Neural Climate and how data flows through the system:
+      </p>
+      <ul>
+        <li><strong>IoT Sensors</strong> collect environmental metrics like temperature, humidity, and vibration.</li>
+        <li><strong>AWS IoT Core</strong> securely receives sensor data using MQTT.</li>
+        <li><strong>Lambda Functions</strong> filter and preprocess data, generate alerts.</li>
+        <li><strong>Amazon Timestream</strong> stores telemetry for historical analysis.</li>
+        <li><strong>Amazon S3</strong> stores raw logs, model training data, media.</li>
+        <li><strong>Amazon SageMaker</strong> detects early warning signs of faults.</li>
+        <li><strong>Amazon QuickSight</strong> displays dashboards in real time.</li>
+        <li><strong>AWS Step Functions</strong> automate safety and control workflows.</li>
+      </ul>
+    </div>
+  </div>
 </section>
+
+
 
 <section>
   <h2>👥 Who Benefits and How</h2>
